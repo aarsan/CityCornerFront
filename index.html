@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Citycorner. Share; stay square.</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="/css/sticky-footer-navbar.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="login">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="contact">Contact</a></li>
+          <li><a href="/signin">Login</a></li>
+        </ul>
+        <h3 class="text-muted">CityCorner</h3>
+      </div>
+      {% block content %}{% endblock %}
+
+    </div> <!-- /container -->
+
+    <div class="footer">
+      <div class="container">
+          <p class="text-muted">
+            &copy; Progger, llc.,  2014
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/about">About</a>&nbsp;
+            <a href="/faq">FAQ</a>&nbsp;
+            <a href="/contact">Contact</a>&nbsp;
+            <a target="_blank" href="https://twitter.com/#!/watershedapp">Twitter</a>&nbsp;
+            <a target="_blank" href="http://blog.watershedapp.com">Blog</a>&nbsp;
+            <a href="/terms">Terms</a>&nbsp;
+            <a href="/privacy">Privacy</a>&nbsp;
+          </p>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/bootstrap.min.js" />
+  </body>
+</html>
