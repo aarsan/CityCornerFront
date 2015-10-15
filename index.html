@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Citycorner. Share; stay square.</title>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+<html lang="en" ng-app="citycornerApp">
+<head>
+	<title>Citycorner. Share; stay square.</title>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="app.js"></script>
+</head>
 
-  </head>
-
-  <body="CityCornerModule">
-    <div ng-view>Loading ... </div>
+<body="CityCornerModule">
+<div ng-view></div>
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
@@ -27,7 +28,7 @@
       <div class="container">
           <p class="text-muted">
             &copy; Progger, llc.,  2014
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/about">About</a>&nbsp;
+			<a href="/about">About</a>&nbsp;
             <a href="/faq">FAQ</a>&nbsp;
             <a href="/contact">Contact</a>&nbsp;
             <a target="_blank" href="https://twitter.com/#!/watershedapp">Twitter</a>&nbsp;

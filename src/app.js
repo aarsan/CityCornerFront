@@ -1,12 +1,12 @@
-var app = angular.module('CityCornerModule', []);
+var app = angular.module('citycornerApp', []);
 
-CityCornerModule.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.when('/login', {
-      templateUrl: 'views/login.html',
-      controller: 'LoginCtrl'
-    });
+app.config(['$routeProvider', function ($routeProvider) {
+	$routeProvider.when('/login', {
+		templateUrl: 'views/login.html',
+		controller: 'LoginCtrl'
+	});
 
-    $routeProvider.otherwise({
-      templateUrl: 'views/404.html'
-    });
+	$routeProvider.otherwise({
+		templateUrl: 'views/404.html'
+	});
 }]);
