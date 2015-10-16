@@ -24,6 +24,10 @@ app.config(['$routeProvider',
 				templateUrl: 'partials/terms.html',
 				controller: 'LoginCtrl'
 			}).
+			when('/privacy', {
+				templateUrl: 'partials/privacy.html',
+				controller: 'LoginCtrl'
+			}).
 			when('/register', {
 				templateUrl: 'partials/register.html',
 				controller: 'LoginCtrl'
