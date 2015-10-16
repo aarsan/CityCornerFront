@@ -1,12 +1,9 @@
-var app = angular.module('citycornerApp', []);
+'use strict';
 
-app.config(['$routeProvider', function ($routeProvider) {
-	$routeProvider.when('/login', {
-		templateUrl: 'views/login.html',
-		controller: 'LoginCtrl'
-	});
+var app = angular.module('CityCorner', [
+	'ngRoute'
+]);
 
-	$routeProvider.otherwise({
-		templateUrl: 'views/404.html'
-	});
+app.controller('LoginCtrl', ['$scope', function($scope) {
+	$scope.greeting = "Hola!"
 }]);
