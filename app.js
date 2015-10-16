@@ -13,6 +13,10 @@ app.config(['$routeProvider',
 				templateUrl: 'partials/login.html',
 				controller: 'LoginCtrl'
 			}).
+			when('/about', {
+				templateUrl: 'partials/about.html',
+				controller: 'LoginCtrl'
+			}).
 			otherwise({
 				templateUrl: 'partials/404.html'
 			});

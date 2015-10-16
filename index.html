@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="CityCorner" ng-controller="LoginCtrl">
+<html lang="en" ng-app="CityCorner">
 <head>
 	<title>Citycorner. Share; stay square.</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
@@ -8,40 +8,41 @@
 	<script src="app.js"></script>
 </head>
 
-<body="CityCornerModule">
-<div ng-view></div>
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="login">Home</a></li>
-          <li><a href="#/about">About</a></li>
-          <li><a href="#/contact">Contact</a></li>
-          <li><a href="/signin">Login</a></li>
-        </ul>
-        <h3 class="text-muted">CityCorner</h3>
-      </div>
+<body>
+	<div class="container">
+		<div class="header">
+			<ul class="nav nav-pills pull-right">
+				<li class="active"><a href="#login">Home</a></li>
+				<li><a href="#/about">About</a></li>
+				<li><a href="#/contact">Contact</a></li>
+				<li><a href="#/signin">Login</a></li>
+			</ul>
+			<h3 class="text-muted">CityCorner</h3>
+		</div>
+		<div>
+			<div ng-view></div>
+		</div>
+	</div>
+</body>
 
-    </div> <!-- /container -->
-
-    <div class="panel-footer">
-      <div class="container">
-          <p class="text-muted">
-            &copy; Progger, llc.,  2014
-			<a href="#/about">About</a>&nbsp;
-            <a href="#/faq">FAQ</a>&nbsp;
-            <a href="#/contact">Contact</a>&nbsp;
-            <a target="_blank" href="https://twitter.com/#!/watershedapp">Twitter</a>&nbsp;
-            <a target="_blank" href="http://blog.watershedapp.com">Blog</a>&nbsp;
-            <a href="#/terms">Terms</a>&nbsp;
-            <a href="#/privacy">Privacy</a>&nbsp;
-          </p>
-      </div>
-    </div>
+<footer class="panel-footer">
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<p class="text-muted credit">
+			&copy; Progger, llc.,  2014
+			<a href="#/about">About</a>
+			<a href="#/faq">FAQ</a>
+			<a href="#/contact">Contact</a>
+			<a href="#/terms">Terms</a>
+			<a href="#/privacy">Privacy</a>
+		</p>
+	</nav>
+</footer>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/bootstrap.min.js" />
-  </body>
+
+
 </html>
