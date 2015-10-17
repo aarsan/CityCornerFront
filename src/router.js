@@ -32,6 +32,10 @@ app.config(['$routeProvider',
 				templateUrl: 'partials/register.html',
 				controller: 'LoginCtrl'
 			}).
+			when('/forgot', {
+				templateUrl: 'partials/forgot.html',
+				controller: 'LoginCtrl'
+			}).
 			otherwise({
 				templateUrl: 'partials/404.html'
 			});
