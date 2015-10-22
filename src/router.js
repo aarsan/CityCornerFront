@@ -1,9 +1,6 @@
-app.config(['$routeProvider', 
-	function ($routeProvider) {
+app.config(['$routeProvider', '$locationProvider',
+	function ($routeProvider, $locationProvider) {
 		$routeProvider.
-			when('/', {
-				redirectTo: '/login'
-			}).
 			when('/login', {
 				templateUrl: 'partials/login.html',
 				controller: 'LoginCtrl'
@@ -39,4 +36,6 @@ app.config(['$routeProvider',
 			otherwise({
 				templateUrl: 'partials/404.html'
 			});
-	}]);
+			$locationProvider.html5Mode(true).hashPrefix('!');
+	}
+]);

@@ -1,13 +1,17 @@
 'use strict';
 
-var app = angular.module('ttt', [
-	'oauth'
-]);
 
-var app = angular.module('CityCorner', [
-	'ngRoute'
-]);
+var app = angular.module('CityCorner', ['ngRoute']);
 
+
+// angular.module('CityCorner').config(function($locationProvider) {
+// 	$locationProvider.html5Mode(
+// 		{
+// 			enabled: true,
+// 			requireBase: false
+// 		}
+// 	).hashPrefix('!');
+// });
 
 app.controller('LoginCtrl', ['$scope', function($scope) {
 	$scope.master = {};
